@@ -27,7 +27,7 @@ namespace PuzzleQuest
         {
             //zaloguj postać do gry
            
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Mateusz\Desktop\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\Database1.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Mateusz\Desktop\Inzynieria\PuzzleQuest 14.12.2019\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Tabela where Login='" + textBox_login.Text + "' and Haslo ='" + textBox_haslo.Text + "'", con);
             DataTable data_table = new DataTable();
             sda.Fill(data_table);

@@ -279,7 +279,7 @@ namespace PuzzleQuest
         {
 
 
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Mateusz\Desktop\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\Database1.mdf; Integrated Security = True; Connect Timeout = 30");
+            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Mateusz\Desktop\Inzynieria\PuzzleQuest 14.12.2019\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
             string dat = "Update Tabela set wspolrzedna_X ='" + x +"', wspolrzedna_Y ='" + y +"' where Login ='" + label_pokaz_login.Text +"'";
             SqlCommand com = new SqlCommand(dat, con);
 
