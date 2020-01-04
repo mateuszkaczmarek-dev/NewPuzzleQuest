@@ -221,6 +221,8 @@
     <Content Include="Resources\3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Baal_droga.jpg" />
+    <None Include="Resources\Baal_walka.jpg" />
     <Content Include="Resources\BazaDanych.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -239,8 +241,14 @@
     </Resource>
     <None Include="Resources\Paladyn.jpg" />
     <None Include="Resources\ogien-5.jpg" />
+    <None Include="Resources\Duriel_droga.jpg" />
+    <None Include="Resources\duriel_walka.jpg" />
+    <None Include="Resources\mefisto_profilowe.jpg" />
+    <None Include="Resources\Mefisto_walka.jpg" />
     <Content Include="Resources\radament_na_mapie.jpg" />
     <Content Include="Resources\radament_przeciwnik.jpg" />
+    <None Include="Resources\Tyrael_walka.jpg" />
+    <None Include="Resources\Tyrael_droga.jpg" />
     <Content Include="Resources\zakret_1.png" />
     <Content Include="Resources\zakret_2.png" />
     <Content Include="Resources\zakret_3.png" />

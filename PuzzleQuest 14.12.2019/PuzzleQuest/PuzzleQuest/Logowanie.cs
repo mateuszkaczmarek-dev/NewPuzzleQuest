@@ -27,7 +27,7 @@ namespace PuzzleQuest
         {
             //zaloguj postać do gry
            
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Mateusz\Desktop\NewPuzzleQuest-master\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Mateusz\Desktop\p\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Tabela where Login='" + textBox_login.Text + "' and Haslo ='" + textBox_haslo.Text + "'", con);
             SqlDataAdapter wybor_postaci = new SqlDataAdapter("Select Postac From Tabela where Login ='" + textBox_login.Text + "'", con);
             DataTable p = new DataTable();
@@ -65,7 +65,7 @@ namespace PuzzleQuest
                 Mapa.x = coordinate_X;
                 Mapa.y = coordinate_Y;
                 pp.Show();
-                pp.rycerz.Location = new Point(Mapa.x * 70, Mapa.y * 70);
+                pp.rycerz.Location = new Point(Mapa.x * 80, Mapa.y * 80);
             }
             else
             {

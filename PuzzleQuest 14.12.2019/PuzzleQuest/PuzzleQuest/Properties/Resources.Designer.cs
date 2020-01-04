@@ -19,7 +19,7 @@ namespace PuzzleQuest.Properties {
     // przez narzędzie, takie jak ResGen lub Visual Studio.
     // Aby dodać lub usunąć składową, edytuj plik ResX, a następnie ponownie uruchom narzędzie ResGen
     // z opcją /str lub ponownie utwórz projekt VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -66,6 +66,26 @@ namespace PuzzleQuest.Properties {
         internal static System.Drawing.Bitmap atak {
             get {
                 object obj = ResourceManager.GetObject("atak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Baal_droga {
+            get {
+                object obj = ResourceManager.GetObject("Baal_droga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Baal_walka {
+            get {
+                object obj = ResourceManager.GetObject("Baal_walka", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +153,26 @@ namespace PuzzleQuest.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Duriel_droga {
+            get {
+                object obj = ResourceManager.GetObject("Duriel_droga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap duriel_walka {
+            get {
+                object obj = ResourceManager.GetObject("duriel_walka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap klocek_czerwony {
             get {
                 object obj = ResourceManager.GetObject("klocek_czerwony", resourceCulture);
@@ -176,6 +216,26 @@ namespace PuzzleQuest.Properties {
         internal static System.Drawing.Bitmap lucznik {
             get {
                 object obj = ResourceManager.GetObject("lucznik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mefisto_profilowe {
+            get {
+                object obj = ResourceManager.GetObject("mefisto_profilowe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mefisto_walka {
+            get {
+                object obj = ResourceManager.GetObject("Mefisto_walka", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +356,26 @@ namespace PuzzleQuest.Properties {
         internal static System.Drawing.Bitmap StworzPostac1 {
             get {
                 object obj = ResourceManager.GetObject("StworzPostac1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tyrael_droga {
+            get {
+                object obj = ResourceManager.GetObject("Tyrael_droga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tyrael_walka {
+            get {
+                object obj = ResourceManager.GetObject("Tyrael_walka", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

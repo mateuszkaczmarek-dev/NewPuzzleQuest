@@ -9,8 +9,8 @@ namespace PuzzleQuest
 
     public partial class Nowa_Gra : Form
     {
-        const int sizeCard = 70;
-        const int rozmiar = 8;
+        const int sizeCard = 80;
+        const int rozmiar = 10;
         int zywotność;
         int zywotność_Postaci;
         int usuniecie = 0;
@@ -81,13 +81,13 @@ namespace PuzzleQuest
                 for (int x = 0; x < 8; x++)
                 {
                     Button b = new Button();
-                    b.Location = new Point(x * 70, y * 70);
+                    b.Location = new Point(x * sizeCard, y * sizeCard);
                     b.Size = new Size(sizeCard, sizeCard);
                     los = losowanie_obrazkow.Next(0, 6);
                     b.Image = nazwa_obrazkow[los];
                     b.Tag = new Point(x, y);
                     b.MouseClick += B_MouseClick;
-                    panel1.Location = new Point(400, 0);
+                    panel1.Location = new Point(450, 0);
                     panel1.Size = new Size(700, 700);
                     panel1.Controls.Add(b);
                     karty[x, y] = b;

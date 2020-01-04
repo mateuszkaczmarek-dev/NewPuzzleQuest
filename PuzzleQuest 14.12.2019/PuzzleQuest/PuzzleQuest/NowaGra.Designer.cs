@@ -201,6 +201,7 @@
             // 
             // panel_Postaci
             // 
+            resources.ApplyResources(this.panel_Postaci, "panel_Postaci");
             this.panel_Postaci.Controls.Add(this.zolty_klocek);
             this.panel_Postaci.Controls.Add(this.zycie_postaci_Label);
             this.panel_Postaci.Controls.Add(this.zielony_klocek);
@@ -216,7 +217,6 @@
             this.panel_Postaci.Controls.Add(this.pieniadze);
             this.panel_Postaci.Controls.Add(this.doswiadczenie_label);
             this.panel_Postaci.Controls.Add(this.ilosc_niebieskich);
-            resources.ApplyResources(this.panel_Postaci, "panel_Postaci");
             this.panel_Postaci.Name = "panel_Postaci";
             // 
             // zycie_postaci_Label
@@ -242,7 +242,7 @@
             // Nowa_Gra
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.Czas);
             this.Controls.Add(this.Ulecz);
             this.Controls.Add(this.panel_Postaci);

@@ -11,16 +11,13 @@ namespace PuzzleQuest
        public static int y = 0;
        public static int x = 0;
         
-        const int sizeCard = 70;
-        const int rozmiar = 8;
+        const int sizeCard = 80;
+        const int rozmiar = 10;
         Button[,] karty = new Button[rozmiar, rozmiar];
-        Image[] nazwa_obrazkow = new Image[7];
         List<Image> droga = new List<Image>();
         List<Image> przeciwnicy_na_mapie = new List<Image>();
         List<Image> przeciwnicy_w_grze = new List<Image>();
         List<Image> bohater = new List<Image>();
-        Image[] tablica_przeciwnikow = new Image[7];
-        Image[] tablica_przeciwnicy_na_drodze = new Image[7];
         public Button rycerz = new Button();
         public Nowa_Gra p = new Nowa_Gra();
 
@@ -40,15 +37,24 @@ namespace PuzzleQuest
 
             przeciwnicy_na_mapie.Add(global::PuzzleQuest.Properties.Resources.belial_na_mapie);
             przeciwnicy_na_mapie.Add(global::PuzzleQuest.Properties.Resources.radament_na_mapie);
+            przeciwnicy_na_mapie.Add(global::PuzzleQuest.Properties.Resources.mefisto_profilowe);
+            przeciwnicy_na_mapie.Add(global::PuzzleQuest.Properties.Resources.Duriel_droga);
+            przeciwnicy_na_mapie.Add(global::PuzzleQuest.Properties.Resources.Baal_droga);
+            przeciwnicy_na_mapie.Add(global::PuzzleQuest.Properties.Resources.Tyrael_droga);
+
 
             przeciwnicy_w_grze.Add(global::PuzzleQuest.Properties.Resources.belial_przeciwnik);
             przeciwnicy_w_grze.Add(global::PuzzleQuest.Properties.Resources.radament_przeciwnik);
-            
+            przeciwnicy_w_grze.Add(global::PuzzleQuest.Properties.Resources.Mefisto_walka);
+            przeciwnicy_w_grze.Add(global::PuzzleQuest.Properties.Resources.duriel_walka);
+            przeciwnicy_w_grze.Add(global::PuzzleQuest.Properties.Resources.Baal_walka);
+            przeciwnicy_w_grze.Add(global::PuzzleQuest.Properties.Resources.Tyrael_walka);
 
-           
+
+
             InitializeComponent();
             
-            rycerz.Location = new Point(x*70, y*70);
+            rycerz.Location = new Point(x* sizeCard ,y * sizeCard);
             rycerz.Size = new Size(sizeCard, sizeCard);
             rycerz.BackgroundImage = bohater[0];
             rycerz.BackgroundImageLayout = ImageLayout.Zoom;
@@ -59,48 +65,80 @@ namespace PuzzleQuest
                 for (int x = 0; x < 8; x++)
                 {
                     Button b = new Button();
-                    b.Location = new Point(x * 70, y * 70);
+                    b.Location = new Point(x * sizeCard, y * sizeCard);
                     b.Size = new Size(sizeCard, sizeCard);
-                    if (((y%2 == 0) && (x <= 6 && x >= 1)) || (x == 0 && y == 0) ||
+                    if(x == 0 && y == 7)
+                    {
+                        b.BackgroundImage = przeciwnicy_na_mapie[5];
+                    }
+                    else if (((y%2 == 0) && (x <= 6 && x >= 1)) || (x == 0 && y == 0) ||
                        ((y%2 == 1 || y == 7) && (x >= 1 && x <= 6)) || (x == 0 && y == 7))
                     {
                         b.BackgroundImage = droga[0];
                     }
+
                     else if (x == 7 && (y%2 == 0))
-                    {   
-                        if(x == 7 && y == 0)
+                    {
+                        if (y == 0)
                         {
-                            b.BackgroundImage = przeciwnicy_na_mapie[0];
+                            b.BackgroundImage = przeciwnicy_na_mapie[0]; //belial
+                        }
+
+                        else if(y == 6)
+                        {
+                            b.BackgroundImage = przeciwnicy_na_mapie[4]; //baal
                         }
                         else
-                        b.BackgroundImage = droga[2];
+                        {
+                            b.BackgroundImage = droga[2];
+                        }
                     }
                     else if (x == 7 && (y%2 == 1))
                     {
-                        b.BackgroundImage = droga[1];
-                    }
-                    else if (x == 0 && (y%2 == 1))
-                    {
+                        if (y == 3)
+                        {
+                            b.BackgroundImage = przeciwnicy_na_mapie[2]; //mefisto
+                        }
                         
-                        b.BackgroundImage = droga[3];
-                        b.BackgroundImageLayout = ImageLayout.Zoom;
+                        else
+                        {
+                            b.BackgroundImage = droga[1];
+                        }
+                    }
+                    else if ((y%2 == 1) && x == 0)
+                    {
+                        if (y == 5)
+                        {
+                            b.BackgroundImage = przeciwnicy_na_mapie[3]; //duriel
+                            b.BackgroundImageLayout = ImageLayout.Zoom;
+                        }
+                       
+                        else
+                        
+                            b.BackgroundImage = droga[3];
+                            b.BackgroundImageLayout = ImageLayout.Zoom;
+                        
                     }
                     else if (x == 0 && (y%2 == 0))
                     {
                         if (x == 0 && y == 2)
                         {
-                            b.BackgroundImage = przeciwnicy_na_mapie[1];
+                            b.BackgroundImage = przeciwnicy_na_mapie[1]; //radament
                         }
+                      
                         else
                             b.BackgroundImage = droga[4];
                     }
+                    
+
+                  
                     b.BackgroundImageLayout = ImageLayout.Zoom; 
                     b.Tag = new Point(x, y);
 
                     
 
-                    panel1.Location = new Point(400, 0);
-                    panel1.Size = new Size(700, 700);
+                    panel1.Location = new Point(450, 0);
+                    panel1.Size = new Size(750, 800);
                     panel1.Controls.Add(b);
                     
                     karty[y, x] = b;
@@ -141,7 +179,7 @@ namespace PuzzleQuest
                     x++;
                     Console.WriteLine("x = " + x);
                 }
-                rycerz.Location = new Point(x * 70, y * 70);
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
 
                 if (rycerz.Location.X == karty[0,7].Location.X  
                     && rycerz.Location.Y == karty[0,7].Location.Y)
@@ -170,7 +208,7 @@ namespace PuzzleQuest
 
                }
                 
-                rycerz.Location = new Point(x * 70, y * 70);
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
                 
                 if (rycerz.Location.X == karty[2, 0].Location.X && rycerz.Location.Y == karty[2, 0].Location.Y)
                 {
@@ -187,7 +225,7 @@ namespace PuzzleQuest
                     Console.WriteLine("x = " + x);
                 }
                 
-                rycerz.Location = new Point(x * 70, y * 70);
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
 
                 Console.WriteLine("x = " + rycerz.Location.X);
                 Console.WriteLine("y = " + rycerz.Location.Y);
@@ -202,7 +240,7 @@ namespace PuzzleQuest
                     Console.WriteLine("y = " + y);
                 }
                 
-                rycerz.Location = new Point(x * 70, y * 70);
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
 
                 Console.WriteLine("x = " + rycerz.Location.X);
                 Console.WriteLine("y = " + rycerz.Location.Y);
@@ -225,6 +263,7 @@ namespace PuzzleQuest
 
                 if (Logowanie.postac == "Czarodziej")
                 {
+                   
                     p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.czarodziej;
                     p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
                 }
@@ -253,7 +292,7 @@ namespace PuzzleQuest
             else if(belial_result == DialogResult.No)
             {
                 x--;
-                rycerz.Location = new Point(x * 70, y * 70);
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
             }
         }
         private void przeciwnik_Radament()
@@ -301,7 +340,7 @@ namespace PuzzleQuest
             else if (radament_result == DialogResult.No)
             {
                 y--;
-                rycerz.Location = new Point(x * 70, y * 70);
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
             }
         }
 
@@ -310,7 +349,7 @@ namespace PuzzleQuest
         {
 
 
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Mateusz\Desktop\NewPuzzleQuest-master\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
+            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Mateusz\Desktop\p\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
             string dat = "Update Tabela set wspolrzedna_X ='" + x +"', wspolrzedna_Y ='" + y +"' where Login ='" + label_pokaz_login.Text +"'";
             SqlCommand com = new SqlCommand(dat, con);
 
