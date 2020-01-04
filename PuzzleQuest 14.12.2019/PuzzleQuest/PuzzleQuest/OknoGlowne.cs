@@ -76,6 +76,7 @@ namespace PuzzleQuest
             if(rezultat == DialogResult.Yes)
             {
                 this.Close();
+                Application.Exit();
             }
         }
 

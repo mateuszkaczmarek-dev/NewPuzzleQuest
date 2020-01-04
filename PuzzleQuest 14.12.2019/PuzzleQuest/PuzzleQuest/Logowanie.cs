@@ -9,7 +9,7 @@ namespace PuzzleQuest
     public partial class Logowanie : Form
     {
         public static string login;
-
+        public static string postac;
         public Logowanie()
         {
             InitializeComponent();
@@ -27,10 +27,14 @@ namespace PuzzleQuest
         {
             //zaloguj postać do gry
            
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Mateusz\Desktop\Inzynieria\PuzzleQuest 14.12.2019\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Mateusz\Desktop\NewPuzzleQuest-master\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Tabela where Login='" + textBox_login.Text + "' and Haslo ='" + textBox_haslo.Text + "'", con);
+            SqlDataAdapter wybor_postaci = new SqlDataAdapter("Select Postac From Tabela where Login ='" + textBox_login.Text + "'", con);
+            DataTable p = new DataTable();
             DataTable data_table = new DataTable();
             sda.Fill(data_table);
+            wybor_postaci.Fill(p);
+            postac = p.Rows[0][0].ToString();
 
             if (data_table.Rows[0][0].ToString() == "1")
             {
@@ -54,7 +58,7 @@ namespace PuzzleQuest
                 int coordinate_X = Int32.Parse(wsprz_X_table.Rows[0][0].ToString());
                 MessageBox.Show("wspolrzedna Ccoordinate X to: " + coordinate_X);
                 int coordinate_Y = Int32.Parse(wsprz_Y_table.Rows[0][0].ToString());
-                MessageBox.Show("wspolrzedna coordinate Y to: " + coordinate_Y);
+                MessageBox.Show("wspolrzedna coordinate Y to: " + coordinate_Y + "\n " + postac);
                 //Mateusz wez tą linijkę poniżej.
                 //MessageBox.Show("wspolrzedna x to: " + wsprz_X_table.Rows[0][0].ToString() + " a y to: " + wsprz_Y_table.Rows[0][0].ToString());
 

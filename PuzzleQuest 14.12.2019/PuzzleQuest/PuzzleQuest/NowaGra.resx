@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 1</value>
+    <value>621, 25</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>540, 523</value>
+    <value>695, 644</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
@@ -140,7 +144,6 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="progressBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -148,10 +151,13 @@
     <value>NoControl</value>
   </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>945, 1</value>
+    <value>1362, 1</value>
+  </data>
+  <data name="progressBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 23</value>
+    <value>521, 28</value>
   </data>
   <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -171,39 +177,6 @@
   <data name="panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>945, 30</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 494</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -217,10 +190,13 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 15</value>
+    <value>196, 86</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+    <value>70, 25</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -243,11 +219,38 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1362, 37</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>521, 744</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="textBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 585</value>
+    <value>0, 857</value>
+  </data>
+  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -256,7 +259,7 @@
     <value>Vertical</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1350, 144</value>
+    <value>1902, 176</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -280,10 +283,13 @@
     <value>NoControl</value>
   </data>
   <data name="pasek_zycia_Postaci.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 1</value>
+    <value>16, 1</value>
+  </data>
+  <data name="pasek_zycia_Postaci.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="pasek_zycia_Postaci.Size" type="System.Drawing.Size, System.Drawing">
-    <value>381, 23</value>
+    <value>508, 28</value>
   </data>
   <data name="pasek_zycia_Postaci.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -307,10 +313,13 @@
     <value>NoControl</value>
   </data>
   <data name="ilosc_czerwonych.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 42</value>
+    <value>39, 52</value>
+  </data>
+  <data name="ilosc_czerwonych.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ilosc_czerwonych.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="ilosc_czerwonych.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -337,10 +346,13 @@
     <value>NoControl</value>
   </data>
   <data name="ilosc_niebieskich.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 68</value>
+    <value>39, 84</value>
+  </data>
+  <data name="ilosc_niebieskich.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ilosc_niebieskich.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="ilosc_niebieskich.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -367,10 +379,13 @@
     <value>NoControl</value>
   </data>
   <data name="ilosc_zoltych.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 94</value>
+    <value>39, 116</value>
+  </data>
+  <data name="ilosc_zoltych.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ilosc_zoltych.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="ilosc_zoltych.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -397,10 +412,13 @@
     <value>NoControl</value>
   </data>
   <data name="ilosc_zielonych.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 120</value>
+    <value>39, 148</value>
+  </data>
+  <data name="ilosc_zielonych.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ilosc_zielonych.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="ilosc_zielonych.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -427,10 +445,13 @@
     <value>NoControl</value>
   </data>
   <data name="monety.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 146</value>
+    <value>39, 180</value>
+  </data>
+  <data name="monety.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="monety.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="monety.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -457,10 +478,13 @@
     <value>NoControl</value>
   </data>
   <data name="zielony_klocek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 120</value>
+    <value>4, 148</value>
+  </data>
+  <data name="zielony_klocek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="zielony_klocek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+    <value>27, 25</value>
   </data>
   <data name="zielony_klocek.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -484,10 +508,13 @@
     <value>NoControl</value>
   </data>
   <data name="niebieski_klocek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 68</value>
+    <value>4, 84</value>
+  </data>
+  <data name="niebieski_klocek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="niebieski_klocek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+    <value>27, 25</value>
   </data>
   <data name="niebieski_klocek.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -511,10 +538,13 @@
     <value>NoControl</value>
   </data>
   <data name="pieniadze.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 146</value>
+    <value>4, 180</value>
+  </data>
+  <data name="pieniadze.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="pieniadze.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+    <value>27, 25</value>
   </data>
   <data name="pieniadze.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -538,10 +568,13 @@
     <value>NoControl</value>
   </data>
   <data name="zolty_klocek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 94</value>
+    <value>4, 116</value>
+  </data>
+  <data name="zolty_klocek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="zolty_klocek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+    <value>27, 25</value>
   </data>
   <data name="zolty_klocek.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -565,10 +598,13 @@
     <value>NoControl</value>
   </data>
   <data name="czerwony_klocek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 42</value>
+    <value>4, 52</value>
+  </data>
+  <data name="czerwony_klocek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="czerwony_klocek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+    <value>27, 25</value>
   </data>
   <data name="czerwony_klocek.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -589,10 +625,13 @@
     <value>7</value>
   </data>
   <data name="atak_picture_box.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 172</value>
+    <value>4, 212</value>
+  </data>
+  <data name="atak_picture_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="atak_picture_box.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+    <value>27, 25</value>
   </data>
   <data name="atak_picture_box.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -619,10 +658,13 @@
     <value>NoControl</value>
   </data>
   <data name="atak_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 172</value>
+    <value>39, 212</value>
+  </data>
+  <data name="atak_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="atak_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="atak_label.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -646,10 +688,13 @@
     <value>True</value>
   </data>
   <data name="doswiadczenie_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 201</value>
+    <value>39, 247</value>
+  </data>
+  <data name="doswiadczenie_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="doswiadczenie_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>13, 13</value>
+    <value>16, 17</value>
   </data>
   <data name="doswiadczenie_label.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -673,10 +718,13 @@
     <value>Stretch</value>
   </data>
   <data name="doswiadczenie_picture_box.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 199</value>
+    <value>4, 245</value>
+  </data>
+  <data name="doswiadczenie_picture_box.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="doswiadczenie_picture_box.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+    <value>27, 25</value>
   </data>
   <data name="doswiadczenie_picture_box.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -696,42 +744,6 @@
   <data name="&gt;&gt;doswiadczenie_picture_box.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="panel_Postaci.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="&gt;&gt;zycie_postaci_Label.Name" xml:space="preserve">
-    <value>zycie_postaci_Label</value>
-  </data>
-  <data name="&gt;&gt;zycie_postaci_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;zycie_postaci_Label.Parent" xml:space="preserve">
-    <value>panel_Postaci</value>
-  </data>
-  <data name="&gt;&gt;zycie_postaci_Label.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel_Postaci.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 30</value>
-  </data>
-  <data name="panel_Postaci.Size" type="System.Drawing.Size, System.Drawing">
-    <value>369, 494</value>
-  </data>
-  <data name="panel_Postaci.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;panel_Postaci.Name" xml:space="preserve">
-    <value>panel_Postaci</value>
-  </data>
-  <data name="&gt;&gt;panel_Postaci.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Postaci.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Postaci.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="zycie_postaci_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -745,10 +757,13 @@
     <value>NoControl</value>
   </data>
   <data name="zycie_postaci_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 15</value>
+    <value>159, 86</value>
+  </data>
+  <data name="zycie_postaci_Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="zycie_postaci_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+    <value>70, 25</value>
   </data>
   <data name="zycie_postaci_Label.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -771,6 +786,30 @@
   <data name="&gt;&gt;zycie_postaci_Label.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="panel_Postaci.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 37</value>
+  </data>
+  <data name="panel_Postaci.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel_Postaci.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 744</value>
+  </data>
+  <data name="panel_Postaci.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel_Postaci.Name" xml:space="preserve">
+    <value>panel_Postaci</value>
+  </data>
+  <data name="&gt;&gt;panel_Postaci.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Postaci.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Postaci.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="Ulecz.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -781,10 +820,13 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="Ulecz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 530</value>
+    <value>13, 800</value>
+  </data>
+  <data name="Ulecz.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="Ulecz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 29</value>
+    <value>179, 36</value>
   </data>
   <data name="Ulecz.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -808,10 +850,13 @@
     <value>True</value>
   </data>
   <data name="Czas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 569</value>
+    <value>283, 800</value>
+  </data>
+  <data name="Czas.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Czas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
+    <value>39, 17</value>
   </data>
   <data name="Czas.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -838,13 +883,13 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>126</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1350, 729</value>
+    <value>1902, 1033</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -10192,6 +10237,9 @@
         AAD/hwAA/gcAAP4DAACOAwAAD58AAA8/AACAPwAAgBgAAIAAAADAAQAAwAcAAOAPAADgBwAA9gMAAP4H
         AAD+BwAA
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

@@ -27,7 +27,7 @@ namespace PuzzleQuest
             }
         }
 
-        List<Image> lista_zdjec = new List<Image>();
+        public static List<Image> lista_zdjec = new List<Image>();
         List<Konto> lista_typu_konto = new List<Konto>();
         
 
@@ -66,7 +66,7 @@ namespace PuzzleQuest
 
             //Wrzucenie danych do bazy danych
 
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Mateusz\Desktop\Inzynieria\PuzzleQuest 14.12.2019\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
+            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Mateusz\Desktop\NewPuzzleQuest-master\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
             string dat = "Insert into [Tabela](Login, Haslo, Nazwa, Postac) Values ('" + Login.Text + "', '" + Haslo.Text + "', '" + NazwaPostaci.Text + "', '" + Wojownik.Text + "')";
             SqlCommand com = new SqlCommand(dat, con);
             con.Open();
