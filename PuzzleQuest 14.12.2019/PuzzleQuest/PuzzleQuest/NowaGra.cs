@@ -43,6 +43,10 @@ namespace PuzzleQuest
         object[] tab_przeciwnikow = new object[7];
         Belial belial = new Belial("Belial", 100, 100f, 0.6f);
         Radament radament = new Radament("Radament", 100, 100f, 0.6f);
+        Mefisto mefisto = new Mefisto("Mefisto", 100, 100f, 0.06f);
+        Duriel duriel = new Duriel("Duriel", 100, 100f, 0.06f);
+        Baal baal = new Baal("Baal", 100, 100f, 0.06f);
+        Tyrael tyrael = new Tyrael("Tyrael", 100, 100f, 0.06f);
 
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -69,10 +73,17 @@ namespace PuzzleQuest
 
             tab_przeciwnikow[0] = belial;
             tab_przeciwnikow[1] = radament;
-
+            tab_przeciwnikow[2] = mefisto;
+            tab_przeciwnikow[3] = duriel;
+            tab_przeciwnikow[4] = baal;
+            tab_przeciwnikow[5] = tyrael;
 
             przeciwnik[0] = belial.nazwa;
             przeciwnik[1] = radament.nazwa;
+            przeciwnik[2] = mefisto.nazwa;
+            przeciwnik[3] = duriel.nazwa;
+            przeciwnik[4] = baal.nazwa;
+            przeciwnik[5] = tyrael.nazwa;
 
             int los;
             
@@ -101,7 +112,6 @@ namespace PuzzleQuest
             ustawienie_Zywotnosci();
             ustawienie_hp_Postaci();
             sprawdzenie_Klockow();
-
             ustawienie_Zycia();
 
             
@@ -122,6 +132,22 @@ namespace PuzzleQuest
             {
                 zywotność = radament.hp;
             }
+            else if(tab_przeciwnikow[z] == mefisto)
+            {
+                zywotność = mefisto.hp;
+            }
+            else if (tab_przeciwnikow[z] == duriel)
+            {
+                zywotność = duriel.hp;
+            }
+            else if (tab_przeciwnikow[z] == baal)
+            {
+                zywotność = baal.hp;
+            }
+            else if (tab_przeciwnikow[z] == tyrael)
+            {
+                zywotność = tyrael.hp;
+            }
         }
         private void ustawienie_Zycia()
         {
@@ -140,6 +166,35 @@ namespace PuzzleQuest
                 label1.Text = progressBar1.Value.ToString() + "/" + zywotność;
 
             }
+            else if (tab_przeciwnikow[z] == mefisto)
+            {
+                progressBar1.Value = mefisto.hp;
+                progressBar1.Maximum = mefisto.hp;
+                label1.Text = progressBar1.Value.ToString() + "/" + zywotność;
+
+            }
+            else if (tab_przeciwnikow[z] == duriel)
+            {
+                progressBar1.Value = duriel.hp;
+                progressBar1.Maximum = duriel.hp;
+                label1.Text = progressBar1.Value.ToString() + "/" + zywotność;
+
+            }
+            else if (tab_przeciwnikow[z] == baal)
+            {
+                progressBar1.Value = baal.hp;
+                progressBar1.Maximum = baal.hp;
+                label1.Text = progressBar1.Value.ToString() + "/" + zywotność;
+
+            }
+            else if (tab_przeciwnikow[z] == tyrael)
+            {
+                progressBar1.Value = tyrael.hp;
+                progressBar1.Maximum = tyrael.hp;
+                label1.Text = progressBar1.Value.ToString() + "/" + zywotność;
+
+            }
+
         }
 
         private void ustawienie_hp_Postaci()

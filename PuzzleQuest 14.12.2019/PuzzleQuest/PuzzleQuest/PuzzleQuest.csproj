@@ -62,7 +62,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Baal.cs" />
     <Compile Include="Beliar.cs" />
+    <Compile Include="Duriel.cs" />
     <Compile Include="Logowanie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +77,7 @@
     <Compile Include="Mapa.Designer.cs">
       <DependentUpon>Mapa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mefisto.cs" />
     <Compile Include="Radament.cs" />
     <Compile Include="StworzPostac.cs">
       <SubType>Form</SubType>
@@ -96,6 +99,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tyrael.cs" />
     <EmbeddedResource Include="Logowanie.resx">
       <DependentUpon>Logowanie.cs</DependentUpon>
     </EmbeddedResource>

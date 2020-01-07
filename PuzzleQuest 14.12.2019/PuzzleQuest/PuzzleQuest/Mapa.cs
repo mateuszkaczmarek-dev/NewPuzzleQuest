@@ -12,7 +12,7 @@ namespace PuzzleQuest
        public static int x = 0;
         
         const int sizeCard = 80;
-        const int rozmiar = 10;
+        const int rozmiar = 8;
         Button[,] karty = new Button[rozmiar, rozmiar];
         List<Image> droga = new List<Image>();
         List<Image> przeciwnicy_na_mapie = new List<Image>();
@@ -186,13 +186,24 @@ namespace PuzzleQuest
                 {
                     przeciwnik_Beliar();
                 }
+                else if (rycerz.Location.X == karty[6, 7].Location.X
+                   && rycerz.Location.Y == karty[6, 7].Location.Y)
+                {
+                    przeciwnik_Ball();
+                }
+
 
                 Console.WriteLine("x = " + rycerz.Location.X);
                 Console.WriteLine("y = " + rycerz.Location.Y);
+
+                Console.WriteLine("xmapa = " + karty[3, 7].Location.X);
+                Console.WriteLine("ymapa = " + karty[3, 7].Location.Y);
+
             }
 
             else if((Keys)e.KeyChar == Keys.S || e.KeyChar == 's')
             {
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
                 if (y <= 6)
                 {
                     if (y % 2 == 0 && x == 7)
@@ -206,13 +217,19 @@ namespace PuzzleQuest
                         Console.WriteLine("y = " + y);
                     }
 
+
                }
                 
                 rycerz.Location = new Point(x * sizeCard, y * sizeCard);
-                
+
                 if (rycerz.Location.X == karty[2, 0].Location.X && rycerz.Location.Y == karty[2, 0].Location.Y)
                 {
                     przeciwnik_Radament();
+                }
+
+                else if (rycerz.Location.X == karty[7, 3].Location.Y && rycerz.Location.Y == karty[7, 3].Location.X)
+                {
+                    przeciwnik_Mefisto();
                 }
 
             }
@@ -229,6 +246,17 @@ namespace PuzzleQuest
 
                 Console.WriteLine("x = " + rycerz.Location.X);
                 Console.WriteLine("y = " + rycerz.Location.Y);
+
+                if(rycerz.Location.X == karty[5, 0].Location.X
+                    && rycerz.Location.Y == karty[5, 0].Location.Y)
+                {
+                    przeciwnik_Duriel();
+                }
+                else if (rycerz.Location.X == karty[7, 0].Location.X
+                    && rycerz.Location.Y == karty[7, 0].Location.Y)
+                {
+                    przeciwnik_Tyrael();
+                }
 
             }
 
@@ -343,6 +371,203 @@ namespace PuzzleQuest
                 rycerz.Location = new Point(x * sizeCard, y * sizeCard);
             }
         }
+
+        private void przeciwnik_Mefisto()
+        {
+
+            DialogResult mefisto_result;
+
+            string podpis = "Przeciwnik";
+
+            mefisto_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Mefisto" + "\n"
+                + "Zycie 3000", podpis, MessageBoxButtons.YesNo);
+            if (mefisto_result == DialogResult.Yes)
+            {
+
+                p.panel2.BackgroundImage = przeciwnicy_w_grze[2];
+                p.panel2.BackgroundImageLayout = ImageLayout.Zoom;
+
+                if (Logowanie.postac == "Czarodziej")
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.czarodziej;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+                else if (Logowanie.postac == "Lucznik")
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.lucznik;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+                else
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.Paladyn;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+
+                System.Threading.Thread nowagra =
+                new System.Threading.Thread(new System.Threading.ThreadStart(otworzInterface));
+                //uruchomienie nowego wątku
+
+
+                nowagra.Start();
+
+                //zamknięcie starego wątku
+
+                Application.ExitThread();
+            }
+            else if (mefisto_result == DialogResult.No)
+            {
+                y--;
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
+            }
+        }
+
+        private void przeciwnik_Duriel()
+        {
+
+            DialogResult duriel_result;
+
+            string podpis = "Przeciwnik";
+
+            duriel_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Duriel" + "\n"
+                + "Zycie 3500", podpis, MessageBoxButtons.YesNo);
+            if (duriel_result == DialogResult.Yes)
+            {
+
+                p.panel2.BackgroundImage = przeciwnicy_w_grze[3];
+                p.panel2.BackgroundImageLayout = ImageLayout.Zoom;
+
+                if (Logowanie.postac == "Czarodziej")
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.czarodziej;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+                else if (Logowanie.postac == "Lucznik")
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.lucznik;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+                else
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.Paladyn;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+
+                System.Threading.Thread nowagra =
+                new System.Threading.Thread(new System.Threading.ThreadStart(otworzInterface));
+                //uruchomienie nowego wątku
+
+
+                nowagra.Start();
+
+                //zamknięcie starego wątku
+
+                Application.ExitThread();
+            }
+            else if (duriel_result == DialogResult.No)
+            {
+                x++;
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
+            }
+        }
+
+        private void przeciwnik_Ball()
+        {
+
+            DialogResult baal_result;
+
+            string podpis = "Przeciwnik";
+
+            baal_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Ball" + "\n"
+                + "Zycie 3750", podpis, MessageBoxButtons.YesNo);
+            if (baal_result == DialogResult.Yes)
+            {
+
+                p.panel2.BackgroundImage = przeciwnicy_w_grze[4];
+                p.panel2.BackgroundImageLayout = ImageLayout.Zoom;
+
+                if (Logowanie.postac == "Czarodziej")
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.czarodziej;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+                else if (Logowanie.postac == "Lucznik")
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.lucznik;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+                else
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.Paladyn;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+
+                System.Threading.Thread nowagra =
+                new System.Threading.Thread(new System.Threading.ThreadStart(otworzInterface));
+                //uruchomienie nowego wątku
+
+
+                nowagra.Start();
+
+                //zamknięcie starego wątku
+
+                Application.ExitThread();
+            }
+            else if (baal_result == DialogResult.No)
+            {
+                x--;
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
+            }
+        }
+
+        private void przeciwnik_Tyrael()
+        {
+
+            DialogResult tyrael_result;
+
+            string podpis = "Przeciwnik";
+
+            tyrael_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Ball" + "\n"
+                + "Zycie 3750", podpis, MessageBoxButtons.YesNo);
+            if (tyrael_result == DialogResult.Yes)
+            {
+
+                p.panel2.BackgroundImage = przeciwnicy_w_grze[5];
+                p.panel2.BackgroundImageLayout = ImageLayout.Zoom;
+
+                if (Logowanie.postac == "Czarodziej")
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.czarodziej;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+                else if (Logowanie.postac == "Lucznik")
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.lucznik;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+                else
+                {
+                    p.panel_Postaci.BackgroundImage = global::PuzzleQuest.Properties.Resources.Paladyn;
+                    p.panel_Postaci.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+
+                System.Threading.Thread nowagra =
+                new System.Threading.Thread(new System.Threading.ThreadStart(otworzInterface));
+                //uruchomienie nowego wątku
+
+
+                nowagra.Start();
+
+                //zamknięcie starego wątku
+
+                Application.ExitThread();
+            }
+            else if (tyrael_result == DialogResult.No)
+            {
+                x++;
+                rycerz.Location = new Point(x * sizeCard, y * sizeCard);
+            }
+        }
+
 
         //Zapisanie gry
         public void button_zapisz_gre_Click(object sender, EventArgs e)
