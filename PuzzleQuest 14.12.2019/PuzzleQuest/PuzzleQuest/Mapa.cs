@@ -11,7 +11,7 @@ namespace PuzzleQuest
        public static int y = 0;
        public static int x = 0;
         
-        const int sizeCard = 80;
+        const int sizeCard = 70;
         const int rozmiar = 8;
         Button[,] karty = new Button[rozmiar, rozmiar];
         List<Image> droga = new List<Image>();
@@ -282,7 +282,7 @@ namespace PuzzleQuest
             
             string podpis = "Przeciwnik";
             belial_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Belial " + "\n"
-                + "Zycie 1000",podpis,MessageBoxButtons.YesNo);
+                + "Zycie 450",podpis,MessageBoxButtons.YesNo);
             if(belial_result == DialogResult.Yes)
             {
                 
@@ -331,7 +331,7 @@ namespace PuzzleQuest
             string podpis = "Przeciwnik";
 
             radament_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Radament" + "\n"
-                + "Zycie 2500", podpis, MessageBoxButtons.YesNo);
+                + "600", podpis, MessageBoxButtons.YesNo);
             if (radament_result == DialogResult.Yes)
             {
 
@@ -380,7 +380,7 @@ namespace PuzzleQuest
             string podpis = "Przeciwnik";
 
             mefisto_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Mefisto" + "\n"
-                + "Zycie 3000", podpis, MessageBoxButtons.YesNo);
+                + "Zycie 900", podpis, MessageBoxButtons.YesNo);
             if (mefisto_result == DialogResult.Yes)
             {
 
@@ -429,7 +429,7 @@ namespace PuzzleQuest
             string podpis = "Przeciwnik";
 
             duriel_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Duriel" + "\n"
-                + "Zycie 3500", podpis, MessageBoxButtons.YesNo);
+                + "Zycie 1050", podpis, MessageBoxButtons.YesNo);
             if (duriel_result == DialogResult.Yes)
             {
 
@@ -477,8 +477,8 @@ namespace PuzzleQuest
 
             string podpis = "Przeciwnik";
 
-            baal_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Ball" + "\n"
-                + "Zycie 3750", podpis, MessageBoxButtons.YesNo);
+            baal_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Baal" + "\n"
+                + "Zycie 1200", podpis, MessageBoxButtons.YesNo);
             if (baal_result == DialogResult.Yes)
             {
 
@@ -526,8 +526,8 @@ namespace PuzzleQuest
 
             string podpis = "Przeciwnik";
 
-            tyrael_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Ball" + "\n"
-                + "Zycie 3750", podpis, MessageBoxButtons.YesNo);
+            tyrael_result = MessageBox.Show("Czy chcesz walczyc z przeciwnikiem Tyrael" + "\n"
+                + "Zycie 1500", podpis, MessageBoxButtons.YesNo);
             if (tyrael_result == DialogResult.Yes)
             {
 
@@ -574,7 +574,7 @@ namespace PuzzleQuest
         {
 
 
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Luk\Desktop\Puzzle Quest\v12\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
+            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Mateusz\Desktop\p\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
             string dat = "Update Tabela set wspolrzedna_X ='" + x +"', wspolrzedna_Y ='" + y +"' where Login ='" + label_pokaz_login.Text +"'";
             SqlCommand com = new SqlCommand(dat, con);
 

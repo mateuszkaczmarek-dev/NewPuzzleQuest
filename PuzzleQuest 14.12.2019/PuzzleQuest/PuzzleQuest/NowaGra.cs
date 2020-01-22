@@ -9,7 +9,7 @@ namespace PuzzleQuest
 
     public partial class Nowa_Gra : Form
     {
-        const int sizeCard = 80;
+        const int sizeCard = 70;
         const int rozmiar = 10;
         int zywotność;
         int zywotność_Postaci;
@@ -41,12 +41,12 @@ namespace PuzzleQuest
 
         string[] przeciwnik = new string[7];
         object[] tab_przeciwnikow = new object[7];
-        Belial belial = new Belial("Belial", 100, 100f, 0.6f);
-        Radament radament = new Radament("Radament", 100, 100f, 0.6f);
-        Mefisto mefisto = new Mefisto("Mefisto", 100, 100f, 0.06f);
-        Duriel duriel = new Duriel("Duriel", 100, 100f, 0.06f);
-        Baal baal = new Baal("Baal", 100, 100f, 0.06f);
-        Tyrael tyrael = new Tyrael("Tyrael", 100, 100f, 0.06f);
+        Belial belial = new Belial("Belial", 450, 15f, 0.6f);
+        Radament radament = new Radament("Radament", 600, 20f, 0.6f);
+        Mefisto mefisto = new Mefisto("Mefisto", 900, 25f, 0.06f);
+        Duriel duriel = new Duriel("Duriel", 1050, 30f, 0.06f);
+        Baal baal = new Baal("Baal", 1200, 35f, 0.06f);
+        Tyrael tyrael = new Tyrael("Tyrael", 1500, 45f, 0.06f);
 
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -84,6 +84,7 @@ namespace PuzzleQuest
             przeciwnik[3] = duriel.nazwa;
             przeciwnik[4] = baal.nazwa;
             przeciwnik[5] = tyrael.nazwa;
+
 
             int los;
             
@@ -205,7 +206,7 @@ namespace PuzzleQuest
 
         private void leczenie_Postaci()
         {
-            if (suma_czerwonych >= 10)
+            if (suma_czerwonych >= 5)
             {
                 Ulecz.Enabled = true;
             }
@@ -219,7 +220,7 @@ namespace PuzzleQuest
             int szansa_na_pieniadze;
             Random losowanie_obrazkow = new Random();
 
-
+            
 
 
             for (int i = 0; i < 8; i++) // sprawdzanie w pionie
@@ -291,7 +292,7 @@ namespace PuzzleQuest
 
                             }
                             crytyczne_potwora = losowanie_obrazkow.Next(1, 10);
-                            obrazenia_potwora = losowanie_obrazen.Next(30, 70);
+                            obrazenia_potwora = losowanie_obrazen.Next(10, 15);
                             if (licznik_sprawdzen >= 2)
                             {
                                 
@@ -405,7 +406,7 @@ namespace PuzzleQuest
 
                             }
                             crytyczne_potwora = losowanie_obrazkow.Next(1, 10);
-                            obrazenia_potwora = losowanie_obrazen.Next(30, 70);
+                            obrazenia_potwora = losowanie_obrazen.Next(10, 15);
                             if (licznik_sprawdzen >= 2)
                             {
                                 
@@ -514,7 +515,7 @@ namespace PuzzleQuest
                             }
 
                             crytyczne_potwora = losowanie_obrazkow.Next(1, 10);
-                            obrazenia_potwora = losowanie_obrazen.Next(30, 70);
+                            obrazenia_potwora = losowanie_obrazen.Next(10, 15);
                             if (licznik_sprawdzen >= 2)
                             {
                                 
@@ -634,7 +635,7 @@ namespace PuzzleQuest
 
                             }
                             crytyczne_potwora = losowanie_obrazkow.Next(1, 10);
-                            obrazenia_potwora = losowanie_obrazen.Next(30, 70);
+                            obrazenia_potwora = losowanie_obrazen.Next(10, 15);
 
                             if (licznik_sprawdzen >= 2)
                             {
@@ -740,7 +741,7 @@ namespace PuzzleQuest
                                 progressBar1.Value = 0;
                             }
                             crytyczne_potwora = losowanie_obrazkow.Next(1, 10);
-                            obrazenia_potwora = losowanie_obrazen.Next(30, 70);
+                            obrazenia_potwora = losowanie_obrazen.Next(10, 15);
                             if (licznik_sprawdzen >= 2)
                             {
                                 
@@ -847,7 +848,7 @@ namespace PuzzleQuest
                                 progressBar1.Value = 0;
                             }
                             crytyczne_potwora = losowanie_obrazkow.Next(1, 10);
-                            obrazenia_potwora = losowanie_obrazen.Next(30, 70);
+                            obrazenia_potwora = losowanie_obrazen.Next(10, 15);
                             if (licznik_sprawdzen >= 2)
                             {
                                 
@@ -908,16 +909,38 @@ namespace PuzzleQuest
 
 
             if (progressBar1.Value == 0)
-            { 
+            {
                 if (z == 0)
                 {
-                    
+
                     MessageBox.Show("Pokonałeś przeciwnika " + przeciwnik[z]);
+                    Mapa.y++;
                 }
                 else if (z == 1)
                 {
-                    
+
                     MessageBox.Show("Pokonałeś przeciwnika " + przeciwnik[z]);
+                    Mapa.x++;
+                }
+                else if (z == 2)
+                {
+                    MessageBox.Show("Pokonałeś przeciwnika " + przeciwnik[z]);
+                    Mapa.x--;
+                }
+                else if (z == 3)
+                {
+                    MessageBox.Show("Pokonałeś przeciwnika " + przeciwnik[z]);
+                    Mapa.y++;
+                }
+                else if (z == 4)
+                {
+                    MessageBox.Show("Pokonałeś przeciwnika " + przeciwnik[z]);
+                    Mapa.y++;
+                }
+                else if (z == 5)
+                {
+                    MessageBox.Show("Pokonałeś przeciwnika " + przeciwnik[z]);
+                    
                 }
                 z++;
 
@@ -937,8 +960,28 @@ namespace PuzzleQuest
                     MessageBox.Show("Pokonał Cie " + przeciwnik[z]);
                     Mapa.y--;
                 }
+                else if (z == 2)
+                {
+                    MessageBox.Show("Pokonał Cie " + przeciwnik[z]);
+                    Mapa.y--;
+                }
+                else if (z == 3)
+                {
+                    MessageBox.Show("Pokonał Cie " + przeciwnik[z]);
+                    Mapa.x++;
+                }
+                else if (z == 4)
+                {
+                    MessageBox.Show("Pokonał Cie " + przeciwnik[z]);
+                    Mapa.x--;
+                }
+                else if (z == 5)
+                {
+                    MessageBox.Show("Pokonał Cie " + przeciwnik[z]);
+                    
+                }
 
-                
+
                 wroc_do_Mapy();
             }
 
@@ -1091,7 +1134,14 @@ namespace PuzzleQuest
 
         private void Ulecz_Click(object sender, EventArgs e)
         {
-            pasek_zycia_Postaci.Value += 200;
+            if (pasek_zycia_Postaci.Value <= 700)
+            {
+                pasek_zycia_Postaci.Value += 300;
+            }
+            else
+            {
+                pasek_zycia_Postaci.Value = 1000;
+            }
             Ulecz.Enabled = false;
             suma_czerwonych = 0;
             ilosc_czerwonych.Text = suma_czerwonych.ToString();

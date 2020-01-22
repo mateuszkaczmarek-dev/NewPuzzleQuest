@@ -92,7 +92,7 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.ForeColor = System.Drawing.Color.Lime;
             this.label1.Name = "label1";
             // 
             // textBox1
@@ -117,26 +117,36 @@
             // ilosc_czerwonych
             // 
             resources.ApplyResources(this.ilosc_czerwonych, "ilosc_czerwonych");
+            this.ilosc_czerwonych.BackColor = System.Drawing.Color.Transparent;
+            this.ilosc_czerwonych.ForeColor = System.Drawing.Color.Lime;
             this.ilosc_czerwonych.Name = "ilosc_czerwonych";
             // 
             // ilosc_niebieskich
             // 
             resources.ApplyResources(this.ilosc_niebieskich, "ilosc_niebieskich");
+            this.ilosc_niebieskich.BackColor = System.Drawing.Color.Transparent;
+            this.ilosc_niebieskich.ForeColor = System.Drawing.Color.Lime;
             this.ilosc_niebieskich.Name = "ilosc_niebieskich";
             // 
             // ilosc_zoltych
             // 
             resources.ApplyResources(this.ilosc_zoltych, "ilosc_zoltych");
+            this.ilosc_zoltych.BackColor = System.Drawing.Color.Transparent;
+            this.ilosc_zoltych.ForeColor = System.Drawing.Color.Lime;
             this.ilosc_zoltych.Name = "ilosc_zoltych";
             // 
             // ilosc_zielonych
             // 
             resources.ApplyResources(this.ilosc_zielonych, "ilosc_zielonych");
+            this.ilosc_zielonych.BackColor = System.Drawing.Color.Transparent;
+            this.ilosc_zielonych.ForeColor = System.Drawing.Color.Lime;
             this.ilosc_zielonych.Name = "ilosc_zielonych";
             // 
             // monety
             // 
             resources.ApplyResources(this.monety, "monety");
+            this.monety.BackColor = System.Drawing.Color.Transparent;
+            this.monety.ForeColor = System.Drawing.Color.Lime;
             this.monety.Name = "monety";
             // 
             // zielony_klocek
@@ -184,11 +194,15 @@
             // atak_label
             // 
             resources.ApplyResources(this.atak_label, "atak_label");
+            this.atak_label.BackColor = System.Drawing.Color.Transparent;
+            this.atak_label.ForeColor = System.Drawing.Color.Lime;
             this.atak_label.Name = "atak_label";
             // 
             // doswiadczenie_label
             // 
             resources.ApplyResources(this.doswiadczenie_label, "doswiadczenie_label");
+            this.doswiadczenie_label.BackColor = System.Drawing.Color.Transparent;
+            this.doswiadczenie_label.ForeColor = System.Drawing.Color.Lime;
             this.doswiadczenie_label.Name = "doswiadczenie_label";
             // 
             // doswiadczenie_picture_box
@@ -223,7 +237,7 @@
             // 
             resources.ApplyResources(this.zycie_postaci_Label, "zycie_postaci_Label");
             this.zycie_postaci_Label.BackColor = System.Drawing.Color.Transparent;
-            this.zycie_postaci_Label.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.zycie_postaci_Label.ForeColor = System.Drawing.Color.Lime;
             this.zycie_postaci_Label.Name = "zycie_postaci_Label";
             // 
             // Ulecz
@@ -244,9 +258,9 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.Czas);
+            this.Controls.Add(this.pasek_zycia_Postaci);
             this.Controls.Add(this.Ulecz);
             this.Controls.Add(this.panel_Postaci);
-            this.Controls.Add(this.pasek_zycia_Postaci);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.panel2);

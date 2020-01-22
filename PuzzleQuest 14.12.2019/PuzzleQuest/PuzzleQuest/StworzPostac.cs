@@ -56,17 +56,17 @@ namespace PuzzleQuest
         private void Zatwierdz_Click(object sender, EventArgs e)
         {
             
-            lista_typu_konto.Add(new Konto(NazwaPostaci.Text,Login.Text,Haslo.Text," "));
+            lista_typu_konto.Add(new Konto(NazwaPostaci.Text,Login.Text,Haslo.Text,Wojownik.Text));
 
 
             MessageBox.Show("Nazwa postaci : " + NazwaPostaci.Text + "\n"
                                   + "Login : " + Login.Text + "\n"
                                   + "Haslo : " + Haslo.Text + "\n"
-                                  + "Klasa Postaci : " + lista_typu_konto[0]);
+                                  + "Klasa Postaci : " + Wojownik.Text);
 
             //Wrzucenie danych do bazy danych
 
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Luk\Desktop\Puzzle Quest\v12\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
+            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Mateusz\Desktop\p\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf; Integrated Security = True; Connect Timeout = 30");
             string dat = "Insert into [Tabela](Login, Haslo, Nazwa, Postac) Values ('" + Login.Text + "', '" + Haslo.Text + "', '" + NazwaPostaci.Text + "', '" + Wojownik.Text + "')";
             SqlCommand com = new SqlCommand(dat, con);
             con.Open();

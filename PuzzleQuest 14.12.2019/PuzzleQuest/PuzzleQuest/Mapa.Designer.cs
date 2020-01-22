@@ -38,8 +38,8 @@
             // panel1
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(888, 13);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(443, 26);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(501, 444);
             this.panel1.TabIndex = 1;
@@ -48,7 +48,7 @@
             // 
             this.button_zapisz_gre.BackColor = System.Drawing.SystemColors.Highlight;
             this.button_zapisz_gre.Location = new System.Drawing.Point(56, 78);
-            this.button_zapisz_gre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_zapisz_gre.Margin = new System.Windows.Forms.Padding(4);
             this.button_zapisz_gre.Name = "button_zapisz_gre";
             this.button_zapisz_gre.Size = new System.Drawing.Size(145, 58);
             this.button_zapisz_gre.TabIndex = 2;
@@ -83,13 +83,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.label_pokaz_login);
             this.Controls.Add(this.label1_zalogowany);
             this.Controls.Add(this.button_zapisz_gre);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Mapa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Puzzle Quest";
