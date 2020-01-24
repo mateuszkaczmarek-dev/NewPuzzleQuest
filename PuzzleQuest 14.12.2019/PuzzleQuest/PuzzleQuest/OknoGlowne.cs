@@ -64,6 +64,9 @@ namespace PuzzleQuest
 
         private void O_Grze_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Autorzy okienko = new Autorzy();
+            okienko.Show();
 
         }
 
@@ -145,19 +148,7 @@ namespace PuzzleQuest
            Gif3.Image = null;
            Gif33.Image = null;
         }
-
-        private void Najlepsi_Gracze_MouseMove(object sender, MouseEventArgs e)
-        {
-            Gif4.Image = lista_gifow[0];
-            Gif44.Image = lista_gifow[0];
-        }
-
-        private void Najlepsi_Gracze_MouseLeave(object sender, EventArgs e)
-        {
-            Gif4.Image = null;
-            Gif44.Image = null;
-        }
-
+        
         private void O_Grze_MouseMove(object sender, MouseEventArgs e)
         {
             Gif5.Image = lista_gifow[0];

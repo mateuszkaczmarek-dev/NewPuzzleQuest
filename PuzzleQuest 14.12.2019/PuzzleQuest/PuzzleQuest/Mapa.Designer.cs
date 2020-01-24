@@ -38,19 +38,19 @@
             // panel1
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(443, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(332, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(501, 444);
+            this.panel1.Size = new System.Drawing.Size(376, 361);
             this.panel1.TabIndex = 1;
             // 
             // button_zapisz_gre
             // 
-            this.button_zapisz_gre.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button_zapisz_gre.Location = new System.Drawing.Point(56, 78);
-            this.button_zapisz_gre.Margin = new System.Windows.Forms.Padding(4);
+            this.button_zapisz_gre.BackColor = System.Drawing.SystemColors.Desktop;
+            this.button_zapisz_gre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_zapisz_gre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button_zapisz_gre.Location = new System.Drawing.Point(42, 63);
             this.button_zapisz_gre.Name = "button_zapisz_gre";
-            this.button_zapisz_gre.Size = new System.Drawing.Size(145, 58);
+            this.button_zapisz_gre.Size = new System.Drawing.Size(109, 47);
             this.button_zapisz_gre.TabIndex = 2;
             this.button_zapisz_gre.Text = "Zapisz grę";
             this.button_zapisz_gre.UseVisualStyleBackColor = false;
@@ -60,10 +60,10 @@
             // 
             this.label1_zalogowany.AutoSize = true;
             this.label1_zalogowany.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1_zalogowany.Location = new System.Drawing.Point(56, 166);
-            this.label1_zalogowany.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1_zalogowany.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1_zalogowany.Location = new System.Drawing.Point(42, 135);
             this.label1_zalogowany.Name = "label1_zalogowany";
-            this.label1_zalogowany.Size = new System.Drawing.Size(173, 24);
+            this.label1_zalogowany.Size = new System.Drawing.Size(141, 21);
             this.label1_zalogowany.TabIndex = 3;
             this.label1_zalogowany.Text = "Zalogowany jako:";
             // 
@@ -71,25 +71,24 @@
             // 
             this.label_pokaz_login.AutoSize = true;
             this.label_pokaz_login.Font = new System.Drawing.Font("Book Antiqua", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_pokaz_login.Location = new System.Drawing.Point(56, 207);
-            this.label_pokaz_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_pokaz_login.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label_pokaz_login.Location = new System.Drawing.Point(42, 168);
             this.label_pokaz_login.Name = "label_pokaz_login";
-            this.label_pokaz_login.Size = new System.Drawing.Size(59, 22);
+            this.label_pokaz_login.Size = new System.Drawing.Size(48, 19);
             this.label_pokaz_login.TabIndex = 4;
             this.label_pokaz_login.Text = "label1";
             // 
             // Mapa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.BackColor = System.Drawing.SystemColors.InfoText;
+            this.ClientSize = new System.Drawing.Size(1011, 586);
             this.Controls.Add(this.label_pokaz_login);
             this.Controls.Add(this.label1_zalogowany);
             this.Controls.Add(this.button_zapisz_gre);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Mapa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Puzzle Quest";

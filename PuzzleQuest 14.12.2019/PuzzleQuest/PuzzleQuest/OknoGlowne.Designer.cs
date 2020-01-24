@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PuzzleQuest));
             this.Nowa_Gra = new System.Windows.Forms.Button();
-            this.Najlepsi_Gracze = new System.Windows.Forms.Button();
             this.O_Grze = new System.Windows.Forms.Button();
             this.Wyjscie = new System.Windows.Forms.Button();
             this.Stworz_Postac = new System.Windows.Forms.Button();
@@ -38,25 +37,21 @@
             this.Gif1 = new System.Windows.Forms.PictureBox();
             this.Gif2 = new System.Windows.Forms.PictureBox();
             this.Gif3 = new System.Windows.Forms.PictureBox();
-            this.Gif4 = new System.Windows.Forms.PictureBox();
             this.Gif5 = new System.Windows.Forms.PictureBox();
             this.Gif6 = new System.Windows.Forms.PictureBox();
             this.Gif11 = new System.Windows.Forms.PictureBox();
             this.Gif22 = new System.Windows.Forms.PictureBox();
             this.Gif33 = new System.Windows.Forms.PictureBox();
-            this.Gif44 = new System.Windows.Forms.PictureBox();
             this.Gif55 = new System.Windows.Forms.PictureBox();
             this.Gif66 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Gif1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Gif4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Gif44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif55)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif66)).BeginInit();
             this.SuspendLayout();
@@ -76,31 +71,16 @@
             this.Nowa_Gra.MouseLeave += new System.EventHandler(this.Nowa_Gra_MouseLeave);
             this.Nowa_Gra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Nowa_Gra_MouseUp);
             // 
-            // Najlepsi_Gracze
-            // 
-            this.Najlepsi_Gracze.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.Najlepsi_Gracze.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Najlepsi_Gracze.Location = new System.Drawing.Point(87, 280);
-            this.Najlepsi_Gracze.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Najlepsi_Gracze.Name = "Najlepsi_Gracze";
-            this.Najlepsi_Gracze.Size = new System.Drawing.Size(194, 48);
-            this.Najlepsi_Gracze.TabIndex = 1;
-            this.Najlepsi_Gracze.Text = "Najlepsi Gracze";
-            this.Najlepsi_Gracze.UseVisualStyleBackColor = false;
-            this.Najlepsi_Gracze.Click += new System.EventHandler(this.Najlepsi_Gracze_Click);
-            this.Najlepsi_Gracze.MouseLeave += new System.EventHandler(this.Najlepsi_Gracze_MouseLeave);
-            this.Najlepsi_Gracze.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Najlepsi_Gracze_MouseMove);
-            // 
             // O_Grze
             // 
             this.O_Grze.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.O_Grze.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.O_Grze.Location = new System.Drawing.Point(87, 336);
+            this.O_Grze.Location = new System.Drawing.Point(87, 281);
             this.O_Grze.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.O_Grze.Name = "O_Grze";
             this.O_Grze.Size = new System.Drawing.Size(194, 50);
             this.O_Grze.TabIndex = 2;
-            this.O_Grze.Text = "O Grze";
+            this.O_Grze.Text = "Autorzy";
             this.O_Grze.UseVisualStyleBackColor = false;
             this.O_Grze.Click += new System.EventHandler(this.O_Grze_Click);
             this.O_Grze.MouseLeave += new System.EventHandler(this.O_Grze_MouseLeave);
@@ -110,7 +90,7 @@
             // 
             this.Wyjscie.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Wyjscie.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Wyjscie.Location = new System.Drawing.Point(87, 394);
+            this.Wyjscie.Location = new System.Drawing.Point(87, 339);
             this.Wyjscie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Wyjscie.Name = "Wyjscie";
             this.Wyjscie.Size = new System.Drawing.Size(194, 50);
@@ -178,18 +158,9 @@
             this.Gif3.TabIndex = 8;
             this.Gif3.TabStop = false;
             // 
-            // Gif4
-            // 
-            this.Gif4.Location = new System.Drawing.Point(288, 280);
-            this.Gif4.Name = "Gif4";
-            this.Gif4.Size = new System.Drawing.Size(49, 50);
-            this.Gif4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Gif4.TabIndex = 9;
-            this.Gif4.TabStop = false;
-            // 
             // Gif5
             // 
-            this.Gif5.Location = new System.Drawing.Point(288, 336);
+            this.Gif5.Location = new System.Drawing.Point(288, 281);
             this.Gif5.Name = "Gif5";
             this.Gif5.Size = new System.Drawing.Size(49, 50);
             this.Gif5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -198,7 +169,7 @@
             // 
             // Gif6
             // 
-            this.Gif6.Location = new System.Drawing.Point(288, 394);
+            this.Gif6.Location = new System.Drawing.Point(288, 339);
             this.Gif6.Name = "Gif6";
             this.Gif6.Size = new System.Drawing.Size(49, 50);
             this.Gif6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -232,18 +203,9 @@
             this.Gif33.TabIndex = 14;
             this.Gif33.TabStop = false;
             // 
-            // Gif44
-            // 
-            this.Gif44.Location = new System.Drawing.Point(32, 280);
-            this.Gif44.Name = "Gif44";
-            this.Gif44.Size = new System.Drawing.Size(49, 50);
-            this.Gif44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Gif44.TabIndex = 15;
-            this.Gif44.TabStop = false;
-            // 
             // Gif55
             // 
-            this.Gif55.Location = new System.Drawing.Point(32, 336);
+            this.Gif55.Location = new System.Drawing.Point(32, 281);
             this.Gif55.Name = "Gif55";
             this.Gif55.Size = new System.Drawing.Size(49, 50);
             this.Gif55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -252,7 +214,7 @@
             // 
             // Gif66
             // 
-            this.Gif66.Location = new System.Drawing.Point(32, 394);
+            this.Gif66.Location = new System.Drawing.Point(32, 339);
             this.Gif66.Name = "Gif66";
             this.Gif66.Size = new System.Drawing.Size(49, 50);
             this.Gif66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -269,13 +231,11 @@
             this.ClientSize = new System.Drawing.Size(361, 490);
             this.Controls.Add(this.Gif66);
             this.Controls.Add(this.Gif55);
-            this.Controls.Add(this.Gif44);
             this.Controls.Add(this.Gif33);
             this.Controls.Add(this.Gif22);
             this.Controls.Add(this.Gif11);
             this.Controls.Add(this.Gif6);
             this.Controls.Add(this.Gif5);
-            this.Controls.Add(this.Gif4);
             this.Controls.Add(this.Gif3);
             this.Controls.Add(this.Gif2);
             this.Controls.Add(this.Gif1);
@@ -283,7 +243,6 @@
             this.Controls.Add(this.Stworz_Postac);
             this.Controls.Add(this.Wyjscie);
             this.Controls.Add(this.O_Grze);
-            this.Controls.Add(this.Najlepsi_Gracze);
             this.Controls.Add(this.Nowa_Gra);
             this.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -297,13 +256,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.Gif1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Gif4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Gif44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif55)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gif66)).EndInit();
             this.ResumeLayout(false);
@@ -313,7 +270,6 @@
         #endregion
 
         private System.Windows.Forms.Button Nowa_Gra;
-        private System.Windows.Forms.Button Najlepsi_Gracze;
         private System.Windows.Forms.Button O_Grze;
         private System.Windows.Forms.Button Wyjscie;
         private System.Windows.Forms.Button Stworz_Postac;
@@ -321,13 +277,11 @@
         private System.Windows.Forms.PictureBox Gif1;
         private System.Windows.Forms.PictureBox Gif2;
         private System.Windows.Forms.PictureBox Gif3;
-        private System.Windows.Forms.PictureBox Gif4;
         private System.Windows.Forms.PictureBox Gif5;
         private System.Windows.Forms.PictureBox Gif6;
         private System.Windows.Forms.PictureBox Gif11;
         private System.Windows.Forms.PictureBox Gif22;
         private System.Windows.Forms.PictureBox Gif33;
-        private System.Windows.Forms.PictureBox Gif44;
         private System.Windows.Forms.PictureBox Gif55;
         private System.Windows.Forms.PictureBox Gif66;
     }

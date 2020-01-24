@@ -97,7 +97,9 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.MenuText;
             resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox1.Name = "textBox1";
             // 
             // zaznaczanie_Timer
@@ -148,6 +150,10 @@
             this.monety.BackColor = System.Drawing.Color.Transparent;
             this.monety.ForeColor = System.Drawing.Color.Lime;
             this.monety.Name = "monety";
+            // 
+            // fontDialog1
+            // 
+            this.fontDialog1.Color = System.Drawing.Color.DarkGray;
             // 
             // zielony_klocek
             // 
@@ -218,6 +224,7 @@
             resources.ApplyResources(this.panel_Postaci, "panel_Postaci");
             this.panel_Postaci.Controls.Add(this.zolty_klocek);
             this.panel_Postaci.Controls.Add(this.zycie_postaci_Label);
+            this.panel_Postaci.Controls.Add(this.Ulecz);
             this.panel_Postaci.Controls.Add(this.zielony_klocek);
             this.panel_Postaci.Controls.Add(this.doswiadczenie_picture_box);
             this.panel_Postaci.Controls.Add(this.ilosc_czerwonych);
@@ -257,14 +264,14 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Controls.Add(this.Czas);
             this.Controls.Add(this.pasek_zycia_Postaci);
-            this.Controls.Add(this.Ulecz);
-            this.Controls.Add(this.panel_Postaci);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_Postaci);
             this.Name = "Nowa_Gra";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Nowa_Gra_Load);

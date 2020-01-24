@@ -27,7 +27,7 @@ namespace PuzzleQuest
         {
             //zaloguj postać do gry
            
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Mateusz\Desktop\p\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Luk\Desktop\Puzzle Quest\v13\NewPuzzleQuest\PuzzleQuest 14.12.2019\PuzzleQuest\PuzzleQuest\Resources\BazaDanych.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Tabela where Login='" + textBox_login.Text + "' and Haslo ='" + textBox_haslo.Text + "'", con);
             SqlDataAdapter wybor_postaci = new SqlDataAdapter("Select Postac From Tabela where Login ='" + textBox_login.Text + "'", con);
             DataTable p = new DataTable();
@@ -56,9 +56,9 @@ namespace PuzzleQuest
                 wsprz_Y.Fill(wsprz_Y_table);
 
                 int coordinate_X = Int32.Parse(wsprz_X_table.Rows[0][0].ToString());
-                MessageBox.Show("wspolrzedna Ccoordinate X to: " + coordinate_X);
+                //MessageBox.Show("wspolrzedna Ccoordinate X to: " + coordinate_X);
                 int coordinate_Y = Int32.Parse(wsprz_Y_table.Rows[0][0].ToString());
-                MessageBox.Show("wspolrzedna coordinate Y to: " + coordinate_Y + "\n " + postac);
+                //MessageBox.Show("wspolrzedna coordinate Y to: " + coordinate_Y + "\n " + postac);
                 //Mateusz wez tą linijkę poniżej.
                 //MessageBox.Show("wspolrzedna x to: " + wsprz_X_table.Rows[0][0].ToString() + " a y to: " + wsprz_Y_table.Rows[0][0].ToString());
 
